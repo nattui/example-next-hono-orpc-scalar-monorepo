@@ -3,7 +3,7 @@ import { RPCHandler } from "@orpc/server/fetch"
 import { ZodToJsonSchemaConverter } from "@orpc/zod/zod4"
 import { Scalar } from "@scalar/hono-api-reference"
 import { Hono } from "hono"
-import { loggerMiddleware } from "@/middleware /logger.middleware"
+import { loggerMiddleware } from "@/middleware/logger.middleware"
 import { router } from "@/routes/router"
 
 const app = new Hono()
