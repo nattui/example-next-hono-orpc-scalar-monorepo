@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "module": "preserve",
+    "moduleResolution": "bundler",
+    "noEmit": true,
+    "paths": {
+      "@/*": ["./src/*", "../../packages/db/src/*"]
+    },
+    "skipLibCheck": true,
+    "strict": true
+  }
+}

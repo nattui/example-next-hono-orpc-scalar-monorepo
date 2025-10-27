@@ -1,0 +1,29 @@
+{
+  "name": "web",
+  "scripts": {
+    "build": "next build",
+    "check:type": "next typegen && tsc --noEmit",
+    "check:type:watch": "next typegen && tsc --noEmit --watch",
+    "dev": "next dev --port 3001",
+    "start": "next start --port 3001"
+  },
+  "dependencies": {
+    "@nattui/react-components": "^0.0.22",
+    "@nattui/tailwind-tokenless": "^0.0.5",
+    "@orpc/client": "^1.10.2",
+    "api": "workspace:*",
+    "db": "workspace:*",
+    "next": "^16.0.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.15",
+    "@types/node": "^24.9.1",
+    "@types/react": "^19.2.2",
+    "@types/react-dom": "^19.2.1",
+    "babel-plugin-react-compiler": "^1.0.0",
+    "tailwindcss": "^4.1.15",
+    "typescript": "catalog:"
+  }
+}

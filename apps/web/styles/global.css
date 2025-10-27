@@ -1,0 +1,7 @@
+/* Order matters */
+@import "./tailwind.css";
+@import "./tailwind-reset.css";
+@import "./animations.css";
+@import "./colors.css";
+@import "./font.css";
+@import "./custom.css";

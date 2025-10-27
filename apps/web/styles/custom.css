@@ -1,0 +1,44 @@
+/* Disable transitions */
+.no-transitions * {
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  -webkit-transition: none !important;
+  transition: none !important;
+}
+
+/* Disable scrolling */
+.no-overscroll {
+  overflow: hidden;
+  overscroll-behavior: none;
+}
+
+/* Highlight */
+::-moz-selection {
+  color: var(--color-gray-2);
+  background: var(--color-primary-10);
+}
+::selection {
+  color: var(--color-gray-2);
+  background: var(--color-primary-10);
+}
+
+/* Input date */
+input::-webkit-datetime-edit-day-field:focus,
+input::-webkit-datetime-edit-month-field:focus,
+input::-webkit-datetime-edit-year-field:focus {
+  color: var(--color-gray-2);
+  background: var(--color-primary-10);
+}
+
+.dark ::-moz-selection {
+  color: var(--color-gray-1);
+}
+.dark ::selection {
+  color: var(--color-gray-1);
+}
+.dark input::-webkit-datetime-edit-day-field:focus,
+.dark input::-webkit-datetime-edit-month-field:focus,
+.dark input::-webkit-datetime-edit-year-field:focus {
+  color: var(--color-gray-2);
+  background: var(--color-primary-10);
+}

@@ -1,0 +1,100 @@
+/* ====================================================== /
+    Natt Nguyen's CSS Reset
+    Last updated: 2025.01.26
+
+    The goal of a reset stylesheet is to reduce browser
+    inconsistencies, improve the user experience, and
+    improve the CSS authoring experience. Assumes
+    the use of Tailwind CSS Preflight.
+
+    Reference:
+    - https://www.joshwcomeau.com/css/custom-css-reset
+    - https://piccalil.li/blog/a-more-modern-css-reset/
+// ===================================================== */
+
+/*
+    Adapt to color schemes (scrollbar color)
+*/
+:root {
+  color-scheme: light dark;
+}
+
+/*
+    Typographic tweaks
+    - Improve text rendering
+    - Add accessible line height
+*/
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.5;
+}
+
+/*
+    (Mobile) Disables additional non-standard gestures such as double-tap to zoom
+*/
+html {
+  touch-action: manipulation;
+}
+
+/*
+    (Mobile) Disable automatic text size increase
+*/
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/*
+    (Safari mobile) Disable tap highlight
+*/
+body {
+  /* Disables tap highlight */
+  -webkit-tap-highlight-color: transparent;
+}
+
+/*
+    (Safari mobile) Remove top inner shadow
+*/
+input,
+textarea {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+/*
+    Remove input arrows
+    Chrome, Safari, Edge, Opera
+*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  margin: 0;
+  -webkit-appearance: none;
+}
+
+/*
+    Remove input number arrows
+*/
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+/*
+    Respecting motion preferences
+    Reference: https://web.dev/articles/prefers-reduced-motion#bonus_forcing_reduced_motion_on_all_websites
+*/
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-delay: -1ms !important;
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    background-attachment: initial !important;
+    scroll-behavior: auto !important;
+    transition-delay: -1ms !important;
+    transition-duration: 1ms !important;
+  }
+}
