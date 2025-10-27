@@ -24,7 +24,6 @@ app.get(
   "/docs",
   Scalar({
     defaultOpenAllTags: true,
-    expandAllResponses: true,
     hideClientButton: true,
     url: "/openapi.json",
   }),
