@@ -1,4 +1,4 @@
-### Experiment: Next.js + Hono (Bun) + Turborepo
+### example-next-hono-orpc-scalar-monorepo
 
 A minimal monorepo demonstrating a typed full‑stack setup:
 - **Web app**: Next.js 16 (React 19) with Tailwind CSS v4 and `@nattui` UI
